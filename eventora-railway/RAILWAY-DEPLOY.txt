@@ -1,0 +1,23 @@
+EVENTORA - RAILWAY READY
+
+1. Extract this ZIP.
+2. Upload the folder to a new GitHub repository.
+3. Go to Railway.
+4. Click New Project -> Deploy from GitHub Repo.
+5. Select your Eventora repository.
+6. Railway will detect Node.js automatically.
+7. Add these Variables in Railway:
+   JWT_SECRET = any long random value
+   ADMIN_EMAIL = admin@eventora.local
+   ADMIN_PASSWORD = ChangeThis123!
+
+Optional Razorpay:
+   RAZORPAY_KEY_ID
+   RAZORPAY_KEY_SECRET
+
+8. Deploy.
+9. Open the generated Railway domain.
+
+IMPORTANT:
+This version intentionally removes better-sqlite3 so it avoids native build-image failures.
+It uses JSON file storage for easier deployment.
