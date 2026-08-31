@@ -26,5 +26,19 @@
       "Couple": 1299,
       "VIP": 2199
     }
+  },
+  {
+  "id": "local-comedy-night-2026",
+  "name": "Ahmedabad Comedy Night",
+  "event_date": "2026-09-20T19:30:00+05:30",
+  "venue": "Ahmedabad, Gujarat",
+  "description": "Live stand-up comedy featuring local artists.",
+  "capacity": 500,
+  "status": "active",
+  "passes": {
+    "Single": 399,
+    "Couple": 699,
+    "VIP": 999
   }
+}
 ]
