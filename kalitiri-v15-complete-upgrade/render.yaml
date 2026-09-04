@@ -1,0 +1,23 @@
+services:
+  - type: web
+    name: kaali-ni-tidi-v15
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /healthz
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: TURN_TIMEOUT_MS
+        value: 60000
+      - key: RECONNECT_GRACE_MS
+        value: 90000
+
+# Optional production settings for v15:
+# TURN_TIMEOUT_MS=60000
+# RECONNECT_GRACE_MS=90000
+# PERSISTENCE_FILE=/var/data/kalitiri-state.json   # use a Render persistent disk
+# TURN_URL=turn:your-turn-server.example.com:3478
+# TURN_USERNAME=...
+# TURN_CREDENTIAL=...

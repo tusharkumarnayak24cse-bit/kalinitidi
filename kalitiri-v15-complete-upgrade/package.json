@@ -1,0 +1,31 @@
+{
+  "name": "kaali-ni-tidi-kalitiri-rules",
+  "version": "15.0.0",
+  "private": true,
+  "description": "Kaali Ni Tidi v15 complete public upgrade: Quick Match, public tables, Ready/Rematch, stats, leaderboard, spectators, moderation, reconnect countdown, bot difficulty, TURN-ready voice, persistence hooks, crash logging and Android haptics.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "cap:android:add": "npx cap add android",
+    "cap:android:sync": "npx cap sync android",
+    "android": "npx cap open android",
+    "cap:ios:add": "npx cap add ios",
+    "cap:ios:sync": "npx cap sync ios",
+    "ios": "npx cap open ios"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "socket.io": "^4.8.1",
+    "@capacitor/core": "^8.0.0",
+    "@capacitor/android": "^8.0.0",
+    "@capacitor/ios": "^8.0.0"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^8.0.0",
+    "typescript": "^5.9.2"
+  }
+}
