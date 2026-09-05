@@ -1,0 +1,36 @@
+{
+  "name": "kaali-ni-tidi-kalitiri-rules",
+  "version": "3.3.0",
+  "private": true,
+  "description": "Kaali Ni Tidi v33 Ultimate Premium Edition with cinematic game flow, XP/ranks, missions, QR invites, reactions, replay/audit, PWA, moderation, update checks and competitive multiplayer.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "cap:android:add": "npx cap add android",
+    "cap:android:sync": "npx cap sync android",
+    "android": "npx cap open android",
+    "cap:ios:add": "npx cap add ios",
+    "cap:ios:sync": "npx cap sync ios",
+    "ios": "npx cap open ios"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "socket.io": "^4.8.1",
+    "@capacitor/core": "^8.0.0",
+    "@capacitor/android": "^8.0.0",
+    "@capacitor/ios": "^8.0.0",
+    "qrcode": "^1.5.4"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^8.0.0",
+    "typescript": "^5.9.2"
+  },
+  "optionalDependencies": {
+    "redis": "^4.7.0",
+    "@socket.io/redis-adapter": "^8.3.0"
+  }
+}
