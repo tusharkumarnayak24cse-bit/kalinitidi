@@ -1,0 +1,38 @@
+{
+  "name": "kaali-ni-tidi-kalitiri-rules",
+  "version": "3.7.0",
+  "private": true,
+  "description": "Kaali Ni Tidi v37 production-hardened multiplayer edition with persistent accounts, secure sessions, ranked play, tournaments, replay/audit, PWA and Capacitor apps.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "cap:android:add": "npx cap add android",
+    "cap:android:sync": "npx cap sync android",
+    "android": "npx cap open android",
+    "cap:ios:add": "npx cap add ios",
+    "cap:ios:sync": "npx cap sync ios",
+    "ios": "npx cap open ios",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "socket.io": "^4.8.1",
+    "@capacitor/core": "^8.0.0",
+    "@capacitor/android": "^8.0.0",
+    "@capacitor/ios": "^8.0.0",
+    "qrcode": "^1.5.4",
+    "pg": "^8.16.3"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^8.0.0",
+    "typescript": "^5.9.2"
+  },
+  "optionalDependencies": {
+    "redis": "^4.7.0",
+    "@socket.io/redis-adapter": "^8.3.0"
+  }
+}

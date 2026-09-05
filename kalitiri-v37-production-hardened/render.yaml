@@ -1,0 +1,35 @@
+services:
+  - type: web
+    name: tusharevent-2
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /healthz
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: REQUIRE_DATABASE
+        value: "true"
+      - key: DATABASE_URL
+        sync: false
+      - key: ADMIN_KEY
+        sync: false
+      - key: PUBLIC_GAME_URL
+        value: https://tusharevent-2.onrender.com
+      - key: SESSION_TTL_DAYS
+        value: "30"
+      - key: MAX_SESSIONS_PER_USER
+        value: "5"
+      - key: TURN_TIMEOUT_MS
+        value: "60000"
+      - key: BOT_ACTION_DELAY_MS
+        value: "1400"
+      - key: TRICK_REVIEW_MS
+        value: "3800"
+      - key: RECONNECT_GRACE_MS
+        value: "90000"
+      - key: SPECTATOR_DELAY_MS
+        value: "5000"
+      - key: REGION_ID
+        value: oregon
