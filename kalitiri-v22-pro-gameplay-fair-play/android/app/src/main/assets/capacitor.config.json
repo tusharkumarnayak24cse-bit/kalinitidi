@@ -1,0 +1,9 @@
+{
+	"appId": "com.kaalinitidi.game",
+	"appName": "Kaali Ni Tidi",
+	"webDir": "public",
+	"server": {
+		"androidScheme": "https",
+		"iosScheme": "capacitor"
+	}
+}
