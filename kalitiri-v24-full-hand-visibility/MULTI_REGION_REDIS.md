@@ -1,0 +1,2 @@
+# Redis and multi-region
+Set REDIS_URL to enable the optional Socket.IO Redis adapter. This synchronizes Socket.IO broadcasts across instances, but the current in-memory room objects still need a shared authoritative room store before true active-active multi-region gameplay. Use one region for public beta. For multi-region production, move rooms/queues to Redis and accounts/replays to PostgreSQL.
